@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+	<bean class="com.tka.Student" id="std">
+		<property name="studentId" value="121"></property>
+		<property name="studentName" value="Shuhbham"></property>
+		<property name="studentCity" value="Pune"></property>
+
+	</bean>
+
+	<bean class="com.tka.School" id="sch">
+		<property name="schoolId" value="11"></property>
+		<property name="schoolName" value="R.J.M.V"></property>
+		<property name="schoolCity" value="Jamner"></property>
+		<property name="stud" ref="std"></property>
+	</bean>
+</beans>      
